@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Simplest web page</title>
+    <title>Simple report</title>
   </head>
   <body>
-    This is a static web page!
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+      $.getJSON("/rest/data", function (report) {
+        document.write(
+          "Num rows: " +
+            report.numRows +
+            "\r\n" +
+            "Num columns: " +
+            report.numColumns +
+            "\r\n" +
+            "Columns: " +
+            report.columns.join(", ")
+        );
+      });
+    </script>
   </body>
 </html>

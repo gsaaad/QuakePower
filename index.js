@@ -75,9 +75,6 @@ const data = [
   },
 ];
 
-app.get("/", (req, res) => {
-  res.send("This is a basic express server");
-});
 app.get("/rest/data", (req, res) => {
   const report = generateReport(data);
   res.json(report);
