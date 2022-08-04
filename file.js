@@ -1,12 +1,10 @@
-// tookbox for reading and writing files
-
 const fs = require("fs");
 
 function read(fileName) {
   return new Promise((resolve, reject) => {
-    fs.readFile(fileName, "utf8", (err, textData) => {
+    fs.readFile(fileName, "utf-8", (err, Data) => {
       if (!err) {
-        resolve(textData);
+        resolve(Data);
       } else {
         reject(err);
         return;
@@ -15,13 +13,15 @@ function read(fileName) {
   });
 }
 
-function write(fileName, textData) {
+function write(fileName, Data) {
   return new Promise((resolve, reject) => {
-    fs.writeFile(fileName, textData, (err) => {
+    fs.writeFile(fileName, Data, (err) => {
       if (!err) {
         resolve();
-      } else reject(err);
-      return;
+      } else {
+        reject(err);
+        return;
+      }
     });
   });
 }
