@@ -80,6 +80,7 @@ const data = [
   },
 ];
 
+// when user goes to rest/data, generate report of data
 app.get("/rest/data", (req, res) => {
   const report = generateReport(data);
   res.json(report);
