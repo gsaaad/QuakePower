@@ -1,12 +1,17 @@
 const express = require("express");
 const path = require("path");
+
 const generateReport = require("./public/generate-report");
 
+// app
 const app = express();
+// static public
 const staticFilesPath = path.join(__dirname, "public");
+// middle ware
 const staticFilesMiddleWare = express.static(staticFilesPath);
 app.use("/", staticFilesMiddleWare);
 
+// data
 const data = [
   {
     dive_divers: "Anjani Ganase, Christophe Bailhache",
