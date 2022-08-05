@@ -16,16 +16,24 @@ const fetchData = async (URL) => {
       // console.log($("table").html());
       const table = $("table").text();
 
-      console.log(table.split("\n"));
+      // console.log(table.split("\n"));
       const tablearray = table.split("\n");
       const filteredArray = [];
+      // console.log(tablearray);
       tablearray.forEach((word) => {
-        if (word.length >= 1) {
+        if (word.length > 1) {
           filteredArray.push(word);
         }
       });
       console.log(filteredArray);
+      // for (let i = 0; i < filteredArray.length; i = i + 9) {
+      //   console.log(filteredArray.slice(i, i + 9));
+      //   console.log(i, "NUMBER BABY");
+      // }
+      // const stringTogether = filteredArray.join(" ");
+      // console.log(stringTogether);
       // fs.writeFileSync("tableData.txt", table);
     });
 };
+
 fetchData(url);
