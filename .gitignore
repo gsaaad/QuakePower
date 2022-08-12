@@ -1,6 +1,6 @@
 node_modules
 earthquakes.csv
-earthquakes.json
+
 cricket.js
 extract_cricket_world_cups_list.js
 index.js
