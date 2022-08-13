@@ -1,8 +1,17 @@
-const readCsvData = require("./file");
+const fs = require("fs");
 
-function readData() {
-  console.log(fileData.slice(0, 15));
-}
-readData();
+const readData = () => {
+  fs.readFile("./data/export_EMSC (2).csv", "utf8", (err, data) => {
+    if (!err) {
+      var rawData = data;
+      // console.log(rawData);
+      rawData = rawData.replaceAll(",", "");
+      rawData = rawData.replaceAll(";", ",");
 
-module.exports = readData;
+      fs.writeFileSync("EMSC.csv", rawData);
+    } else {
+      console.error(err);
+    }
+  });
+};
+module.exports = readData();

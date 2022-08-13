@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const { earthquakes } = require("./earthquakes");
+const { earthquakes } = require("./EMSC.json");
 const filterByQuery = require("./filterByQuery");
 //  app
 const app = express();
@@ -17,7 +17,6 @@ app.get("/api/earthquakes", (req, res) => {
   if (req.query) {
     earthquakeData = filterByQuery(req.query, earthquakeData);
   }
-  console.log(req.query);
 
   res.json(earthquakeData);
 });
