@@ -15,9 +15,9 @@ function filterByQuery(query, earthquakeArray) {
         earthquake.Longitude == query.Longitude
     );
   }
-  if (query["Depth/Km"]) {
+  if (query.Depth) {
     filteredResults = filteredResults.filter(
-      (earthquake) => earthquake["Depth/Km"] == query["Depth/Km"]
+      (earthquake) => earthquake.Depth == query.Depth
     );
   }
   if (query.Date) {
@@ -25,6 +25,15 @@ function filterByQuery(query, earthquakeArray) {
     // console.log(filteredResults[13].Date);
     filteredResults = filteredResults.filter(
       (earthquake) => earthquake.Date == query.Date
+    );
+  }
+  if (query.Region) {
+    console.log(query.Region);
+    console.log(filteredResults[1].Region);
+    console.log(query.Region == filteredResults[1].Region);
+
+    filteredResults = filteredResults.filter(
+      (earthquake) => earthquake.Region == query.Region
     );
   }
 
