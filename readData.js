@@ -1,14 +1,14 @@
 const fs = require("fs");
 
 const readData = () => {
-  fs.readFile("./data/export_EMSC (2).csv", "utf8", (err, data) => {
+  fs.readFile("./data/EMSC_2004_2022_6MAG.csv", "utf8", (err, data) => {
     if (!err) {
       var rawData = data;
       // console.log(rawData);
       rawData = rawData.replaceAll(",", "");
       rawData = rawData.replaceAll(";", ",");
 
-      fs.writeFileSync("EMSC.csv", rawData);
+      fs.writeFileSync("EMSC_2004_2022_6MAG.csv", rawData);
     } else {
       console.error(err);
     }
