@@ -30,6 +30,7 @@ function createNewEarthquake(body, EQArray) {
   return earthquake;
 }
 
+// todo this is EMSC DATA
 // ! get api route earthquakes
 app.get("/api/earthquakes", (req, res) => {
   let earthquakeData = earthquakes;
@@ -39,6 +40,7 @@ app.get("/api/earthquakes", (req, res) => {
 
   res.json(earthquakeData);
 });
+// todo EMSC DATA
 app.get("/api/earthquakes/:id", (req, res) => {
   let earthquakeData = earthquakes;
   const result = findById(req.params.id, earthquakeData);
@@ -48,7 +50,8 @@ app.get("/api/earthquakes/:id", (req, res) => {
     res.send(404);
   }
 });
-// todo fix this GET method for users to see their  data inputed!y
+// todo fix this GET method for users to see their  data inputed!
+// TODO user based data (not necessarily important but allows users to get data)
 // app.get("/api/userEarthquakes", (req,res)=>{
 //   let userEarthquakes = userData;
 //   if(req.query){
