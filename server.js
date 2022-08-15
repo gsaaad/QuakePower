@@ -33,10 +33,10 @@ function createNewEarthquake(body, EQArray) {
 function validateEarthquake(earthquake) {
   // we need user to input Date, Time, Latitude, Longitude, Depth, Magnitude, Region
 
-  if (!earthquake.Date || typeof earthquake.Date !== "number") {
+  if (!earthquake.Date || typeof earthquake.Date !== "string") {
     return false;
   }
-  if (!earthquake["Time UTC"] || typeof earthquake["Time UTC"] !== "number") {
+  if (!earthquake["Time UTC"] || typeof earthquake["Time UTC"] !== "string") {
     return false;
   }
   if (
