@@ -29,6 +29,35 @@ function createNewEarthquake(body, EQArray) {
   );
   return earthquake;
 }
+// function to validate user input
+function validateEarthquake(earthquake) {
+  // we need user to input Date, Time, Latitude, Longitude, Depth, Magnitude, Region
+
+  if (!earthquake.Date || typeof earthquake.Date !== "number") {
+    return false;
+  }
+  if (!earthquake["Time UTC"] || typeof earthquake["Time UTC"] !== "number") {
+    return false;
+  }
+  if (
+    (!earthquake.Latitude && !earthquake.Longitude) ||
+    typeof earthquake.Latitude !== "number" ||
+    typeof earthquake.Longitude !== "number"
+  ) {
+    return false;
+  }
+  if (!earthquake.Depth || typeof earthquake.Depth !== "number") {
+    return false;
+  }
+  if (!earthquake.Magnitude || typeof earthquake.Magnitude !== "number") {
+    return false;
+  }
+  if (!earthquake.Region || typeof earthquake.Region !== "string") {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 // todo this is EMSC DATA
 // ! get api route earthquakes
@@ -62,10 +91,17 @@ app.post("/api/userEarthquakes", (req, res) => {
   // set id based on what the next index of the array will be
   req.body.id = userData.length.toString();
 
-  // add animal to json file and animals array in this function
-  const earthquake = createNewEarthquake(req.body, userData);
-
-  res.json(earthquake);
+  if (!validateEarthquake(req.body)) {
+    res
+      .status(400)
+      .send(
+        "The earthquake was not properly formatted.. Please check your entries and try again.."
+      );
+  } else {
+    // add animal to json file and animals array in this function
+    const earthquake = createNewEarthquake(req.body, userData);
+    res.json(earthquake);
+  }
 });
 
 app.listen(3001, () => {
