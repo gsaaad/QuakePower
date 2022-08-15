@@ -44,25 +44,34 @@
           class="col-12 col-lg-7 flex-row text-center justify-space-around align-center"
         >
           <a class="btn col-12 col-md-auto mx-2" href="/animals"
-            >View Earthquakes</a
+            >View User Inputed Earthquakes</a
+          >
+          <a class="btn col-12 col-md-auto mx-2" href="/animals"
+            >View Earthquake Catalog 2004-2022</a
+          >
+          <a class="btn col-12 col-md-auto mx-2" href="/animals"
+            >View Deadliest Earthquakes</a
+          >
+          <a class="btn col-12 col-md-auto mx-2" href="/animals"
+            >View Largest Earthquakes</a
           >
         </div>
       </section>
       <!-- ! users can enter earthquake data here, this will not be included in the catalog, but just to add some fun and practise CRUD -->
-      <!-- <section class="my-4 flex-row justify-space-between">
-        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+      <section class="my-4 flex-row justify-space-between">
+        <div class="col-12 col-lg-12 bg-dark p-3 mb-3">
           <h3 class="text-light">Enter an Earthquake</h3>
           <form id="animal-form">
-            <label for="animal-name" class="form-label">Earthquake Name</label>
+            <label for="animal-name" class="form-label">Earthquake Date</label>
             <input
-              type="text"
+              type="date"
               id="animal-name"
               name="animal-name"
               class="form-input"
-              placeholder="Enter Name"
+              placeholder="Enter Earthquake Name"
             />
 
-            <label for="species-input" class="form-label">Species</label>
+            <label for="species-input" class="form-label">Time</label>
             <input
               type="text"
               id="species-input"
@@ -143,7 +152,7 @@
           </form>
         </div>
 
-        <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+        <!-- <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
           <h3 class="text-light">Enter a Zookeeper</h3>
           <form id="zookeeper-form">
             <label for="zookeeper-name" class="form-label"
@@ -179,8 +188,8 @@
 
             <button class="btn">Add Zookeeper</button>
           </form>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
     </main>
 
     <script src="./assets/js/script.js"></script>
