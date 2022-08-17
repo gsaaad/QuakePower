@@ -1,11 +1,11 @@
 :root {
-  --primary: #69460c;
+  --primary: #6f5534;
   --secondary: #f1ddcb;
   --tertiary: #92771d;
   --quaternary: #aa5c73;
   --quinary: #594b02;
   --light: #ffffff;
-  --dark: #492a15;
+  --dark: #2c1403;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -16,6 +16,8 @@
 
 * {
   box-sizing: border-box;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 body {
