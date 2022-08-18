@@ -22,37 +22,37 @@ const handleSubmit = (event) => {
   const earthquakeDepth = $("#depth-input").val();
   const earthquakeMagnitude = $("#magnitude-input").val();
   const earthquakeRegion = $("#region-input").val();
-
+  const toggleModal = (modalText) => {
+    modalTitle.text(`Check your ${modalText}`);
+    modal.toggle();
+    console.log("triggered");
+    setTimeout(function () {
+      modal.toggle();
+    }, 5000);
+  };
   //   if date is empty or not string
   if (earthquakeDate === "" || typeof earthquakeDate !== "string") {
-    modalTitle.text("Check your Date");
-    modal.toggle();
+    toggleModal("Date");
   }
   //   if time is empty or not string
   else if (earthquakeTime === "" || typeof earthquakeTime !== "string") {
-    modal.toggle();
-    modalTitle.text("Check your Time");
+    toggleModal("Time");
   } else if (earthquakeLatitude === "" || isNaN(parseInt(earthquakeLatitude))) {
-    modal.toggle();
-    modalTitle.text("Check your Latitude");
+    toggleModal("Latitude");
   } else if (
     earthquakeLongitude === "" ||
     isNaN(parseInt(earthquakeLongitude))
   ) {
-    modal.toggle();
-    modalTitle.text("Check your Longitude");
+    toggleModal("Longitude");
   } else if (earthquakeDepth === "" || isNaN(parseInt(earthquakeDepth))) {
-    modal.toggle();
-    modalTitle.text("Check your Depth");
+    toggleModal("Depth");
   } else if (
     earthquakeMagnitude === "" ||
     isNaN(parseInt(earthquakeMagnitude))
   ) {
-    modal.toggle();
-    modalTitle.text("Check your Magnitude");
-  } else if (earthquakeRegion === "" || isNaN(parseInt(earthquakeRegion))) {
-    modal.toggle();
-    modalTitle.text("Check your Region");
+    toggleModal("Magnitude");
+  } else if (earthquakeRegion.trim() === "") {
+    toggleModal("Region");
   } else {
     const earthquakeObject = {
       earthquakeDate,
@@ -63,8 +63,10 @@ const handleSubmit = (event) => {
       earthquakeMagnitude,
       earthquakeRegion,
     };
-
+    // collect form data
     console.log(earthquakeObject);
+    // todo create a Modal to let user know that their submition has been completed
+    // todo clear form
   }
 };
 const handleModal = (event) => {
