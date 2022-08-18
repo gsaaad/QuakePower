@@ -67,15 +67,23 @@ const handleSubmit = (event) => {
       earthquakeRegion,
     };
     // collect form data
+
     console.log(earthquakeObject);
     // reset form
-    // earthquakeForm.trigger("reset");
+    earthquakeForm.trigger("reset");
+    // change classes to success
     modal.removeClass("bg-danger");
     modal.addClass("bg-success");
+    // add text to let user know its successful!
     modalTitle.text("Thanks for entering your data!");
     modalBody.text(
       "You can enter a new earthquake or check out your existing earthquake in the user inputed data!"
     );
+    // toggle modal and remove it after 5 seconds
+    modal.toggle();
+    setTimeout(() => {
+      modal.toggle();
+    }, 5000);
   }
 };
 
