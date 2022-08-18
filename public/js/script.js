@@ -69,8 +69,29 @@ const handleSubmit = (event) => {
     // collect form data
 
     console.log(earthquakeObject);
+    fetch("/api/userearthquakes", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(earthquakeObject),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          alert("Error: " + response.statusText);
+        }
+      })
+      .then((postResponse) => {
+        console.log(postResponse);
+        alert("Thank you for adding an earthquake");
+      });
+    // fetch and post method
+
     // reset form
-    earthquakeForm.trigger("reset");
+    // earthquakeForm.trigger("reset");
     // change classes to success
     modal.removeClass("bg-danger");
     modal.addClass("bg-success");
