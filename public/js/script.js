@@ -9,6 +9,7 @@ const earthquakeDepth = $("#depth-input");
 const earthquakeMagnitude = $("#magnitude-input");
 const earthquakeRegion = $("#region-input");
 const modal = $("#modal");
+const modalTitle = $("#modal-title");
 const modalClose = $("#btn-close");
 modal.toggle();
 
@@ -24,34 +25,34 @@ const handleSubmit = (event) => {
 
   //   if date is empty or not string
   if (earthquakeDate === "" || typeof earthquakeDate !== "string") {
+    modalTitle.text("Check your Date");
     modal.toggle();
-    console.log("Check your Date");
   }
   //   if time is empty or not string
   else if (earthquakeTime === "" || typeof earthquakeTime !== "string") {
     modal.toggle();
-    console.log("Check your Time");
+    modalTitle.text("Check your Time");
   } else if (earthquakeLatitude === "" || isNaN(parseInt(earthquakeLatitude))) {
     modal.toggle();
-    console.log("Check your Latitude");
+    modalTitle.text("Check your Latitude");
   } else if (
     earthquakeLongitude === "" ||
     isNaN(parseInt(earthquakeLongitude))
   ) {
     modal.toggle();
-    console.log("Check your Longitude");
+    modalTitle.text("Check your Longitude");
   } else if (earthquakeDepth === "" || isNaN(parseInt(earthquakeDepth))) {
     modal.toggle();
-    console.log("Check your Depth");
+    modalTitle.text("Check your Depth");
   } else if (
     earthquakeMagnitude === "" ||
     isNaN(parseInt(earthquakeMagnitude))
   ) {
     modal.toggle();
-    console.log("Check your Magnitude");
+    modalTitle.text("Check your Magnitude");
   } else if (earthquakeRegion === "" || isNaN(parseInt(earthquakeRegion))) {
     modal.toggle();
-    console.log("Check your Region");
+    modalTitle.text("Check your Region");
   } else {
     const earthquakeObject = {
       earthquakeDate,
