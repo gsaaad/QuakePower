@@ -9,8 +9,10 @@ const earthquakeDepth = $("#depth-input");
 const earthquakeMagnitude = $("#magnitude-input");
 const earthquakeRegion = $("#region-input");
 const modal = $("#modal");
+const modalDescp = $("#modal-descp");
 const modalTitle = $("#modal-title");
-const modalClose = $("#btn-close");
+const modalBody = $("#modal-body");
+
 modal.toggle();
 
 const handleSubmit = (event) => {
@@ -23,13 +25,14 @@ const handleSubmit = (event) => {
   const earthquakeMagnitude = $("#magnitude-input").val();
   const earthquakeRegion = $("#region-input").val();
   const toggleModal = (modalText) => {
-    modalTitle.text(`Check your ${modalText}`);
+    modalDescp.text(`Check your ${modalText}`);
     modal.toggle();
-    console.log("triggered");
+
     setTimeout(function () {
       modal.toggle();
     }, 5000);
   };
+
   //   if date is empty or not string
   if (earthquakeDate === "" || typeof earthquakeDate !== "string") {
     toggleModal("Date");
@@ -65,15 +68,15 @@ const handleSubmit = (event) => {
     };
     // collect form data
     console.log(earthquakeObject);
-    // todo create a Modal to let user know that their submition has been completed
-    // todo clear form
+    // reset form
+    // earthquakeForm.trigger("reset");
+    modal.removeClass("bg-danger");
+    modal.addClass("bg-success");
+    modalTitle.text("Thanks for entering your data!");
+    modalBody.text(
+      "You can enter a new earthquake or check out your existing earthquake in the user inputed data!"
+    );
   }
-};
-const handleModal = (event) => {
-  // close the modal
-  event.preventDefault();
-  modal.toggle();
 };
 
 earthquakeForm.on("submit", handleSubmit);
-modalClose.on("click", handleModal);

@@ -7,6 +7,7 @@
   --light: #ffffff;
   --dark: #2c1403;
   --danger: #5a1605;
+  --success: #019927;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -746,6 +747,9 @@ nav a:hover {
 }
 .bg-danger {
   background-color: var(--danger);
+}
+.bg-success {
+  background-color: var(--success);
 }
 
 /* FLEX CONTENT */
