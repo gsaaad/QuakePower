@@ -11,7 +11,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON
 app.use(express.json());
+// use middleware static
+app.use(express.static("public"));
 
+// todo EMSC data filter by Eq IDs
 function findById(id, earthquakeArray) {
   const result = earthquakeArray.filter((earthquake) => earthquake.Eqid == id);
   return result;
@@ -58,6 +61,10 @@ function validateEarthquake(earthquake) {
     return true;
   }
 }
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
 
 // todo this is EMSC DATA
 // ! get api route earthquakes

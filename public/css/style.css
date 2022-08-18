@@ -6,6 +6,7 @@
   --quinary: #594b02;
   --light: #ffffff;
   --dark: #2c1403;
+  --danger: #5a1605;
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -27,7 +28,7 @@ body {
   font-weight: 400;
   color: var(--secondary);
   line-height: 1.5;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h1,
@@ -110,7 +111,7 @@ nav a:hover {
 .btn {
   font-size: 1.6rem;
   font-weight: 600;
-  height: 5rem;
+  height: 7.5rem;
   text-decoration: none;
   padding: 0.5rem 1.2rem;
   width: 100%;
@@ -130,6 +131,17 @@ nav a:hover {
 
 .btn-inline {
   display: inline;
+}
+.modal-title {
+  font-size: 45px;
+}
+.modal {
+  font-size: 30px;
+}
+#btn-close {
+  font-size: 35px;
+  position: relative;
+  left: 47.5%;
 }
 
 /* CARDS */
@@ -731,6 +743,9 @@ nav a:hover {
 
 .bg-dark {
   background-color: var(--dark);
+}
+.bg-danger {
+  background-color: var(--danger);
 }
 
 /* FLEX CONTENT */

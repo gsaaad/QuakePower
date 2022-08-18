@@ -29,14 +29,15 @@
           class="col-12 col-lg-7 flex-row text-center justify-space-around align-center"
         >
           <a class="btn col-12 col-md-auto mx-2" href="/">Add To Our Catalog</a>
-          <a class="btn col-12 col-md-auto mx-2" href="/earthquakes"
-            >View Earthquake Catalog 2004-2022</a
-          >
+          
           <a class="btn col-12 col-md-auto mx-2" href="/deadliest/earthquakes"
             >View Deadliest Earthquakes</a
           >
           <a class="btn col-12 col-md-auto mx-2" href="/largest/earthquakes"
             >View Largest Earthquakes</a
+          >
+          <a class="btn col-12 col-md-auto mx-2" href="/earthquakes"
+            >View Earthquake Catalog 2004-2022</a
           >
         </div>
       </section>
@@ -47,23 +48,28 @@
           <form id="userEarthquake-form">
             <label for="date-input" class="form-label">Search by Date</label>
             <input name="date" id="date-input" class="form-input" type="date" />
-            <label for="age-input" class="form-label">Search by Time</label>
-            <input name="age" id="age-input" class="form-input" type="string" />
-            <label for="age-input" class="form-label"
+            <label for="time-input" class="form-label">Search by Time</label>
+            <input
+              name="time"
+              id="time-input"
+              class="form-input"
+              type="string"
+            />
+            <label for="Latitude_Longitude-input" class="form-label"
               >Search by Latitude & Longitude</label
             >
-            <input name="age" id="age-input" class="form-input" type="string" />
-            <input name="age" id="age-input" class="form-input" type="string" />
-            <label for="age-input" class="form-label">Search by ID</label>
-            <input name="age" id="age-input" class="form-input" type="number" />
-            <label for="age-input" class="form-label">Search by Depth</label>
-            <input name="age" id="age-input" class="form-input" type="number" />
-            <label for="age-input" class="form-label"
+            <input name="Latitude" id="Latitude-input" class="form-input" type="string" />
+            <input name="Longitude" id="Longitude-input" class="form-input" type="string" />
+            <label for="id-input" class="form-label">Search by ID</label>
+            <input name="id" id="id-input" class="form-input" type="number" />
+            <label for="depth-input" class="form-label">Search by Depth</label>
+            <input name="depth" id="depth-input" class="form-input" type="number" />
+            <label fomagnitude-input" class="form-label"
               >Search by Magnitude</label
             >
-            <input name="age" id="age-input" class="form-input" type="number" />
-            <label for="age-input" class="form-label">Search by Region</label>
-            <input name="age" id="age-input" class="form-input" type="string" />
+            <input name="magnitude" id="magnitude-input" class="form-input" type="number" />
+            <label for="region-input" class="form-label">Search by Region</label>
+            <input name="region" id="region-input" class="form-input" type="string" />
             <button class="btn">Get Earthquake</button>
           </form>
         </div>
@@ -72,7 +78,6 @@
         </div>
       </section>
     </main>
-
-    <script src="./assets/js/zookeeper.js"></script>
+    <!-- todo add script for user earthquake -->
   </body>
 </html>

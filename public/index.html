@@ -38,22 +38,23 @@
     </header>
 
     <main class="container-fluid mx-auto my-5">
-      <section class="p-3 mb-3 bg-dark flex-row align-center">
+      <section class="p-3 mb-3 bg-dark flex-row align-center top-container">
         <h2 class="text-light col-12 col-lg-5">Earthquake Catalog</h2>
         <div
           class="col-12 col-lg-7 flex-row text-center justify-space-around align-center"
         >
           <a class="btn col-12 col-md-auto mx-2" href="/userearthquakes"
-            >View User Inputed Earthquakes</a
+            >View User Earthquakes</a
           >
-          <a class="btn col-12 col-md-auto mx-2" href="/earthquakes"
-            >View Earthquake Catalog 2004-2022</a
-          >
+
           <a class="btn col-12 col-md-auto mx-2" href="/deadliest/earthquakes"
             >View Deadliest Earthquakes</a
           >
           <a class="btn col-12 col-md-auto mx-2" href="/largest/earthquakes"
             >View Largest Earthquakes</a
+          >
+          <a class="btn col-12 col-md-auto mx-2" href="/earthquakes"
+            >View Earthquakes 2004-2022</a
           >
         </div>
       </section>
@@ -61,22 +62,40 @@
       <section class="my-4 flex-row justify-space-between">
         <div class="col-12 col-lg-12 bg-dark p-3 mb-3">
           <h3 class="text-light">Enter an Earthquake</h3>
-          <form id="animal-form">
+
+          <!-- Modal for invalid entries -->
+          <div class="modal fade bg-danger text-center" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button type="button" class="close" id="btn-close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                  <h5 class="modal-title">Invalid Entry</h5>
+                </div>
+                <div class="modal-body">
+                  Please take a moment to check over everything..
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
+          <form id="earthquake-form">
             <label for="Earthquake-name" class="form-label bg-primary"
               >Earthquake Date</label
             >
             <input
               type="date"
-              id="Earthquake-name"
-              name="Earthquake-name"
+              id="date-input"
+              name="date-input"
               class="form-input"
             />
 
-            <label for="Time-input" class="form-label bg-primary">Time</label>
+            <label for="time-input" class="form-label bg-primary">Time</label>
             <input
               type="text"
-              id="Time-input"
-              name="Time"
+              id="time-input"
+              name="time"
               class="form-input"
               placeholder="Enter Time of Earthquake"
             />
@@ -86,22 +105,22 @@
             >
             <div class="flex-row justify-center bg-primary">
               <div class="col-auto mb-2">
-                <label for="Latitude-input">Latitude</label>
+                <label for="latitude-input">Latitude</label>
                 <input
                   type="text"
-                  id="Latitude-input"
-                  name="Latitude"
+                  id="latitude-input"
+                  name="latitude"
                   placeholder="Latitude"
                   class="form-input w-75 text-center mx-auto"
                   checked
                 />
               </div>
               <div class="col-auto mb-2 bg-primary">
-                <label for="Longitude-input">Longitude</label>
+                <label for="longitude-input">Longitude</label>
                 <input
                   type="text"
-                  id="Longitude-input"
-                  name="Longitude"
+                  id="longitude-input"
+                  name="longitude"
                   placeholder="Longitude"
                   class="form-input w-75 text-center mx-auto"
                   checked
@@ -114,19 +133,19 @@
             >
             <input
               type="text"
-              id="Depth-input"
-              name="Depth(KM)"
+              id="depth-input"
+              name="depth"
               placeholder="Depth(KM)"
               class="form-input"
               checked
             />
-            <label for="Magnitude-input" class="form-label bg-primary"
+            <label for="magnitude-input" class="form-label bg-primary"
               >Magnitude</label
             >
             <input
               type="text"
-              id="Magnitude-input"
-              name="Magnitude"
+              id="magnitude-input"
+              name="magnitude"
               placeholder="Magnitude"
               class="form-input"
               checked
@@ -136,8 +155,8 @@
             >
             <input
               type="text"
-              id="Region-input"
-              name="Region"
+              id="region-input"
+              name="region"
               placeholder="Region"
               class="form-input"
               checked
@@ -146,47 +165,10 @@
             <button class="btn">Add Earthquake</button>
           </form>
         </div>
-
-        <!-- <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
-          <h3 class="text-light">Enter a Zookeeper</h3>
-          <form id="zookeeper-form">
-            <label for="zookeeper-name" class="form-label"
-              >Zookeeper Name</label
-            >
-            <input
-              type="text"
-              id="zookeeper-name"
-              class="form-input input"
-              placeholder="Enter Name"
-              name="zookeeper-name"
-            />
-
-            <label for="age-input" class="form-label input">Age</label>
-            <input
-              type="number"
-              id="age-input"
-              class="form-input"
-              placeholder="Enter Age"
-              name="age"
-            />
-
-            <label for="favorite-animal" class="form-label"
-              >Favorite Animal</label
-            >
-            <input
-              type="text"
-              class="form-input input"
-              id="favorite-animal"
-              placeholder="Enter Favorite Animal"
-              name="favorite-animal"
-            />
-
-            <button class="btn">Add Zookeeper</button>
-          </form>
-        </div> -->
       </section>
     </main>
-
-    <script src="./assets/js/script.js"></script>
+    <!-- using JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
