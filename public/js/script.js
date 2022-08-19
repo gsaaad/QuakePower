@@ -1,13 +1,13 @@
 // using JQUERY
 
 const earthquakeForm = $("#earthquake-form");
-const earthquakeDate = $("#date-input");
-const earthquakeTime = $("#time-input");
-const earthquakeLatitude = $("#latitude-input");
-const earthquakeLongitude = $("#longitude-input");
-const earthquakeDepth = $("#depth-input");
-const earthquakeMagnitude = $("#magnitude-input");
-const earthquakeRegion = $("#region-input");
+const Date = $("#date-input");
+const Time = $("#time-input");
+const Latitude = $("#latitude-input");
+const Longitude = $("#longitude-input");
+const Depth = $("#depth-input");
+const Magnitude = $("#magnitude-input");
+const Region = $("#region-input");
 const modal = $("#modal");
 const modalDescp = $("#modal-descp");
 const modalTitle = $("#modal-title");
@@ -17,13 +17,13 @@ modal.toggle();
 
 const handleSubmit = (event) => {
   event.preventDefault();
-  const earthquakeDate = $("#date-input").val();
-  const earthquakeTime = $("#time-input").val();
-  const earthquakeLatitude = $("#latitude-input").val();
-  const earthquakeLongitude = $("#longitude-input").val();
-  const earthquakeDepth = $("#depth-input").val();
-  const earthquakeMagnitude = $("#magnitude-input").val();
-  const earthquakeRegion = $("#region-input").val();
+  const Date = $("#date-input").val();
+  const Time = $("#time-input").val();
+  const Latitude = $("#latitude-input").val();
+  const Longitude = $("#longitude-input").val();
+  const Depth = $("#depth-input").val();
+  const Magnitude = $("#magnitude-input").val();
+  const Region = $("#region-input").val();
   const toggleModal = (modalText) => {
     modalDescp.text(`Check your ${modalText}`);
     modal.toggle();
@@ -34,41 +34,34 @@ const handleSubmit = (event) => {
   };
 
   //   if date is empty or not string
-  if (earthquakeDate === "" || typeof earthquakeDate !== "string") {
+  if (Date === "" || typeof Date !== "string") {
     toggleModal("Date");
   }
   //   if time is empty or not string
-  else if (earthquakeTime === "" || typeof earthquakeTime !== "string") {
+  else if (Time === "" || typeof Time !== "string") {
     toggleModal("Time");
-  } else if (earthquakeLatitude === "" || isNaN(parseInt(earthquakeLatitude))) {
+  } else if (Latitude === "" || isNaN(parseInt(Latitude))) {
     toggleModal("Latitude");
-  } else if (
-    earthquakeLongitude === "" ||
-    isNaN(parseInt(earthquakeLongitude))
-  ) {
+  } else if (Longitude === "" || isNaN(parseInt(Longitude))) {
     toggleModal("Longitude");
-  } else if (earthquakeDepth === "" || isNaN(parseInt(earthquakeDepth))) {
+  } else if (Depth === "" || isNaN(parseInt(Depth))) {
     toggleModal("Depth");
-  } else if (
-    earthquakeMagnitude === "" ||
-    isNaN(parseInt(earthquakeMagnitude))
-  ) {
+  } else if (Magnitude === "" || isNaN(parseInt(Magnitude))) {
     toggleModal("Magnitude");
-  } else if (earthquakeRegion.trim() === "") {
+  } else if (Region.trim() === "") {
     toggleModal("Region");
   } else {
     const earthquakeObject = {
-      earthquakeDate,
-      earthquakeTime,
-      earthquakeLatitude,
-      earthquakeLongitude,
-      earthquakeDepth,
-      earthquakeMagnitude,
-      earthquakeRegion,
+      Date,
+      Time,
+      Latitude,
+      Longitude,
+      Depth,
+      Magnitude,
+      Region,
     };
     // collect form data
 
-    console.log(earthquakeObject);
     fetch("/api/userearthquakes", {
       method: "POST",
       headers: {
@@ -81,17 +74,16 @@ const handleSubmit = (event) => {
         if (response.ok) {
           return response.json();
         } else {
-          alert("Error: " + response.statusText);
+          console.log("posting error");
+          return false;
         }
       })
       .then((postResponse) => {
         console.log(postResponse);
-        alert("Thank you for adding an earthquake");
       });
-    // fetch and post method
 
     // reset form
-    // earthquakeForm.trigger("reset");
+    earthquakeForm.trigger("reset");
     // change classes to success
     modal.removeClass("bg-danger");
     modal.addClass("bg-success");

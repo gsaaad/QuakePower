@@ -357,6 +357,24 @@
       "Magnitude": 7.1,
       "Region": "OFFSHORE ANTOFAGASTA CHILE",
       "id": "27"
+    },
+    {
+      "Date": "2022-08-19",
+      "Time": "6am",
+      "Latitude": "59",
+      "Longitude": "33",
+      "Depth": "59",
+      "Magnitude": "8",
+      "Region": "hawaii"
+    },
+    {
+      "Date": "2022-08-19",
+      "Time": "6am",
+      "Latitude": "59",
+      "Longitude": "33",
+      "Depth": "59",
+      "Magnitude": "8",
+      "Region": "hawaii"
     }
   ]
 }
