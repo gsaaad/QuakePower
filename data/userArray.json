@@ -381,12 +381,12 @@
     {
       "Date": "2022-05-29",
       "Time": "05:13:03",
-      "Latitude": -22.99,
-      "Longitude": -75.26,
-      "Depth": 25,
-      "Magnitude": 7.1,
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
       "Region": "OFFSHORE ANTOFAGASTA CHILE",
-      "id": "30"
+      "id": 30
     },
     {
       "Date": "2022-05-29",
@@ -396,7 +396,47 @@
       "Depth": "25",
       "Magnitude": "7.1",
       "Region": "OFFSHORE ANTOFAGASTA CHILE",
-      "id": "30"
+      "id": 31
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": 32
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": 33
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": 34
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": 35
     }
   ]
 }
