@@ -365,7 +365,8 @@
       "Longitude": "33",
       "Depth": "59",
       "Magnitude": "8",
-      "Region": "hawaii"
+      "Region": "hawaii",
+      "id": "28"
     },
     {
       "Date": "2022-08-19",
@@ -374,7 +375,28 @@
       "Longitude": "33",
       "Depth": "59",
       "Magnitude": "8",
-      "Region": "hawaii"
+      "Region": "hawaii",
+      "id": "29"
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": -22.99,
+      "Longitude": -75.26,
+      "Depth": 25,
+      "Magnitude": 7.1,
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": "30"
+    },
+    {
+      "Date": "2022-05-29",
+      "Time": "05:13:03",
+      "Latitude": "-22.99",
+      "Longitude": "-75.26",
+      "Depth": "25",
+      "Magnitude": "7.1",
+      "Region": "OFFSHORE ANTOFAGASTA CHILE",
+      "id": "30"
     }
   ]
 }
