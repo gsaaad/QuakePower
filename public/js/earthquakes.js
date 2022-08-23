@@ -8,7 +8,34 @@ const idInput = $("#id-input");
 const depthInput = $("#depth-input");
 const magnitudeInput = $("#magnitude-input");
 const regionInput = $("#region-input");
+const displayArea = $("#display-area");
 
+// todo utilize google map API for a small map representation of the area!
+
+// printResults on Diplay Area
+const printResults = (resultArr) => {
+  console.log(resultArr);
+
+  const earthquakeDisplay = resultArr.map(
+    ({ Eqid, Date, Latitude, Longitude, Depth, Magnitude, Region }) => {
+      return ` <div class="col-12 col-md-5 mb-3">
+    <div class="card p-3" data-id=${Eqid}>
+    <h4 class="text-dark">${Region}</h4>
+    <p>${Eqid}</p>
+    <p>Date: ${Date}<br/>
+       Latitude: ${Latitude}<br/>
+       Longitude: ${Longitude}<br/>
+       Depth: ${Depth}<br/>
+       Magnitude: ${Magnitude}<br/>
+      </p>
+    </div>
+  </div>`;
+    }
+  );
+  displayArea.html(earthquakeDisplay);
+};
+
+// FETCH      get earthquakes function
 const getEarthquakes = (earthquakeSearch) => {
   //
   let queryURL = `/api/earthquakes?`;
@@ -23,6 +50,8 @@ const getEarthquakes = (earthquakeSearch) => {
 
   // if the query Looking for ID, replace query to match API Route
   if (queryURL.includes("Id")) {
+    console.log("contains id!");
+    console.log(queryURL);
     queryURL = queryURL.replace("?Id=", "/");
   }
 
@@ -35,9 +64,11 @@ const getEarthquakes = (earthquakeSearch) => {
     })
     .then((earthquakeArray) => {
       console.log(earthquakeArray);
+      printResults(earthquakeArray);
     });
 };
 
+// handle submit form to query by search parameter
 const handleSubmitForm = (e) => {
   e.preventDefault();
   const Date = dateInput.val();
