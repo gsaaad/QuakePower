@@ -6,9 +6,11 @@ const createNewEarthquake = require("../../lib/createNewEarthquake");
 
 const router = require("express").Router();
 // userData
-const { userData } = require("../../data/userArray.json");
+const uData = require("../../data/userArray.json");
 // EMSC Data
-const emscData = require("../../data/EMSC.json");
+const eData = require("../../data/EMSC.json");
+const userData = uData.userData;
+const emscData = eData.emscData;
 
 // user can get EMSC Data
 router.get("/earthquakes", (req, res) => {
