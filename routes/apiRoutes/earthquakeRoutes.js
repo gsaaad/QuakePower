@@ -23,8 +23,10 @@ router.get("/earthquakes", (req, res) => {
 });
 router.get("/earthquakes/:id", (req, res) => {
   let earthquakeData = emscData;
+
   const result = findById(req.params.id, earthquakeData);
   if (result) {
+    console.log("this is result", result);
     res.json(result);
   } else {
     res.send(404);

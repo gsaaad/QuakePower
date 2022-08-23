@@ -1,7 +1,7 @@
 // JQUERY SELECTORS
 const earthquakeForm = $("#EMSC-Earthquake-form");
 const dateInput = $("#date-input");
-const timeInput = $("#time-input");
+
 const LatitudeInput = $("#Latitude-input");
 const LongitudeInput = $("#Longitude-input");
 const idInput = $("#id-input");
@@ -12,15 +12,19 @@ const regionInput = $("#region-input");
 const getEarthquakes = (earthquakeSearch) => {
   //
   let queryURL = `/api/earthquakes?`;
-  console.log(queryURL);
 
   // for each property in object, add to query
   Object.entries(earthquakeSearch).forEach(([key, value]) => {
     if (value.length !== 0) {
-      queryURL += `${key}=${value}`;
+      queryURL += `${key}=${value}&`;
     }
   });
   console.log(queryURL);
+
+  // if the query Looking for ID, replace query to match API Route
+  if (queryURL.includes("Id")) {
+    queryURL = queryURL.replace("?Id=", "/");
+  }
 
   fetch(queryURL)
     .then((response) => {
@@ -37,7 +41,7 @@ const getEarthquakes = (earthquakeSearch) => {
 const handleSubmitForm = (e) => {
   e.preventDefault();
   const Date = dateInput.val();
-  const Time = timeInput.val();
+
   const Latitude = LatitudeInput.val();
   const Longitude = LongitudeInput.val();
   const Id = idInput.val();
@@ -46,11 +50,10 @@ const handleSubmitForm = (e) => {
   const Region = regionInput.val();
 
   //   get data
-  console.log(Id, Date, Time, Latitude, Longitude, Depth, Magnitude, Region);
+  console.log(Id, Date, Latitude, Longitude, Depth, Magnitude, Region);
   const earthquakeObject = {
     Id,
     Date,
-    Time,
     Latitude,
     Longitude,
     Depth,
