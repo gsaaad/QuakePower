@@ -41,11 +41,15 @@ const getEarthquakes = (earthquakeSearch) => {
   let queryURL = `/api/earthquakes?`;
 
   // for each property in object, add to query
-  Object.entries(earthquakeSearch).forEach(([key, value]) => {
-    if (value.length !== 0) {
-      queryURL += `${key}=${value}&`;
-    }
-  });
+  if (earthquakeSearch) {
+    Object.entries(earthquakeSearch).forEach(([key, value]) => {
+      if (value.length !== 0) {
+        queryURL += `${key}=${value}&`;
+      }
+    });
+  } else {
+    queryURL = queryURL;
+  }
   console.log(queryURL);
 
   // if the query Looking for ID, replace query to match API Route
@@ -93,5 +97,6 @@ const handleSubmitForm = (e) => {
   };
   getEarthquakes(earthquakeObject);
 };
+getEarthquakes();
 
 earthquakeForm.on("submit", handleSubmitForm);
