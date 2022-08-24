@@ -1,9 +1,10 @@
 node_modules
 earthquakes.csv
-
+EMSC_2004_2022_6MAG.csv
 cricket.js
 extract_cricket_world_cups_list.js
-index.js
+fetchWIKI.js
 earthquakes.txt
 index.html
 sample.html
+earthquakes.js
