@@ -49,14 +49,15 @@ const getEarthquakes = (earthquakeSearch) => {
   } else {
     queryURL = queryURL;
   }
-  console.log(queryURL);
 
   // if the query Looking for ID, replace query to match API Route
   if (queryURL.includes("Id")) {
     console.log("contains id!");
     console.log(queryURL);
     queryURL = queryURL.replace("?Id=", "/");
+    queryURL = queryURL.replace("&", "");
   }
+  console.log(queryURL);
 
   fetch(queryURL)
     .then((response) => {

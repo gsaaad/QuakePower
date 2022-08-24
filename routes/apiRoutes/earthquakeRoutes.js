@@ -3,16 +3,23 @@ const findById = require("../../lib/findById");
 const filterUserDataById = require("../../lib/filterUserDataById");
 const validateEarthquake = require("../../lib/validateEarthquake");
 const createNewEarthquake = require("../../lib/createNewEarthquake");
+const filterDeadliest = require("../../lib/filterDeadliest");
 
 const router = require("express").Router();
 // userData
 const uData = require("../../data/userArray.json");
 // EMSC Data
 const eData = require("../../data/EMSC.json");
+// deadliest Data
+const dData = require("../../data/deadliest.json");
+// largest data
+const lData = require("../../data/largest.json");
 const userData = uData.userData;
 const emscData = eData.emscData;
+const deadliestData = dData.deadliest;
+const largestData = lData.largest;
 
-// user can get EMSC Data
+// !user can get EMSC Data
 router.get("/earthquakes", (req, res) => {
   let earthquakeData = emscData;
 
@@ -33,7 +40,29 @@ router.get("/earthquakes/:id", (req, res) => {
   }
 });
 
-// user can get userData, earthquake by ID, Posting Data
+// !user can get deadliest Data
+router.get("/deadliest", (req, res) => {
+  let earthquakeData = deadliestData;
+  // if there's a query, search by query
+  if (req.query) {
+    earthquakeData = filterDeadliest(req.query, earthquakeData);
+  }
+
+  res.json(earthquakeData);
+});
+router.get("/deadliest/:id", (req, res) => {
+  let earthquakeData = deadliestData;
+
+  const result = filterUserDataById(req.params.id, earthquakeData);
+
+  if (result) {
+    res.json(result);
+  } else {
+    res.send(404);
+  }
+});
+
+// !user can get userData, earthquake by ID, Posting Data
 router.get("/userearthquakes", (req, res) => {
   let earthquakeData = userData;
   if (req.query) {
