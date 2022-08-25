@@ -19,7 +19,7 @@ const emscData = eData.emscData;
 const deadliestData = dData.deadliest;
 const largestData = lData.largest;
 
-// !user can get EMSC Data
+// !user can get EMSC Earthquake Data
 router.get("/earthquakes", (req, res) => {
   let earthquakeData = emscData;
 
@@ -40,7 +40,14 @@ router.get("/earthquakes/:id", (req, res) => {
   }
 });
 
-// !user can get deadliest Data
+// !user can get Largest earthquake Data
+router.get("/largest", (req, res) => {
+  let earthquakeData = largestData;
+
+  // if there's a query, search by query
+  res.json(earthquakeData);
+});
+// !user can get deadliest Earthquake Data
 router.get("/deadliest", (req, res) => {
   let earthquakeData = deadliestData;
   // if there's a query, search by query
