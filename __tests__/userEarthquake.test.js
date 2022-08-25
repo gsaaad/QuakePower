@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 // testing for these functions
 const createNewEarthquake = require("../lib/createNewEarthquake");
 const filterByQuery = require("../lib/filterByQuery");
@@ -37,8 +35,6 @@ test("creates a new earthquake Object", () => {
   expect(earthquake.Region).toBe("OFFSHORE ANTOFAGASTA CHILE");
   expect(earthquake.id).toBe(userData.length - 1);
 });
-console.log("END NOW!");
-process.exit();
 // !does it validateEarthquake when created
 test("validates user input when creating new earthquake", () => {
   const validEarthquake = {
