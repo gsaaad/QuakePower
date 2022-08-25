@@ -51,20 +51,8 @@
         <div class="col-12 col-lg-3 bg-dark p-3">
           <h3 class="text-light">Search For Largest earthquakes</h3>
           <form id="userEarthquake-form">
-            <label for="date-input" class="form-label">Search by Date</label>
-            <input name="date" id="date-input" class="form-input" type="date" />
-            <label for="time-input" class="form-label">Search by Time</label>
-            <input
-              name="time"
-              id="time-input"
-              class="form-input"
-              type="string"
-            />
-            <label for="Latitude_Longitude-input" class="form-label"
-              >Search by Latitude & Longitude</label
-            >
-            <input name="Latitude" id="Latitude-input" class="form-input" type="string" />
-            <input name="Longitude" id="Longitude-input" class="form-input" type="string" />
+
+
             <label for="id-input" class="form-label">Search by ID</label>
             <input name="id" id="id-input" class="form-input" type="number" />
             <label for="depth-input" class="form-label">Search by Depth</label>
@@ -72,9 +60,8 @@
             <label fomagnitude-input" class="form-label"
               >Search by Magnitude</label
             >
-            <input name="magnitude" id="magnitude-input" class="form-input" type="number" />
-            <label for="region-input" class="form-label">Search by Region</label>
-            <input name="region" id="region-input" class="form-input" type="string" />
+            <input name="magnitude" id="magnitude-input" class="form-input" type="string" />
+
             <button class="btn">Get Earthquake</button>
           </form>
         </div>
@@ -83,6 +70,8 @@
         </div>
       </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/largest.js"></script>
     <!-- todo add script for Largest EARTHQUAKES -->
   </body>
 </html>

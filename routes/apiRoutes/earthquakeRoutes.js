@@ -4,7 +4,7 @@ const filterUserDataById = require("../../lib/filterUserDataById");
 const validateEarthquake = require("../../lib/validateEarthquake");
 const createNewEarthquake = require("../../lib/createNewEarthquake");
 const filterDeadliest = require("../../lib/filterDeadliest");
-
+const filterLargest = require("../../lib/filterLargest");
 const router = require("express").Router();
 // userData
 const uData = require("../../data/userArray.json");
@@ -45,7 +45,21 @@ router.get("/largest", (req, res) => {
   let earthquakeData = largestData;
 
   // if there's a query, search by query
+  if (req.query) {
+    earthquakeData = filterLargest(req.query, earthquakeData);
+  }
   res.json(earthquakeData);
+});
+router.get("/largest/:id", (req, res) => {
+  let earthquakeData = largestData;
+
+  const result = filterUserDataById(req.params.id, earthquakeData);
+
+  if (result) {
+    res.json(result);
+  } else {
+    res.send(404);
+  }
 });
 // !user can get deadliest Earthquake Data
 router.get("/deadliest", (req, res) => {

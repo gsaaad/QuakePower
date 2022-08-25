@@ -8,7 +8,8 @@
       "Depth": 15,
       "Notes": "This was the strongest earthquake ever recorded on land.",
       "Deaths": "4800",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 1
     },
     {
       "Year": 1951,
@@ -18,7 +19,8 @@
       "Depth": 30,
       "Notes": "This was the strongest earthquake in a sequence of events.",
       "Deaths": "85",
-      "Injuries": 1200
+      "Injuries": 1200,
+      "id": 2
     },
     {
       "Year": 1952,
@@ -28,7 +30,8 @@
       "Depth": 21.6,
       "Notes": "The death toll from this earthquake and resulting tsunami may be as high as 17000.",
       "Deaths": "2336",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 3
     },
     {
       "Year": 1953,
@@ -38,7 +41,8 @@
       "Depth": 25,
       "Notes": "-",
       "Deaths": "1",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 4
     },
     {
       "Year": 1954,
@@ -48,7 +52,8 @@
       "Depth": 626.2,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 5
     },
     {
       "Year": 1955,
@@ -58,7 +63,8 @@
       "Depth": 15,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 6
     },
     {
       "Year": 1956,
@@ -68,7 +74,8 @@
       "Depth": 20,
       "Notes": "The earthquake triggered a 30 m (98 ft) high tsunami.",
       "Deaths": "56",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 7
     },
     {
       "Year": 1957,
@@ -78,7 +85,8 @@
       "Depth": 25,
       "Notes": "A 10 meter high tsunami led to most of the damage.",
       "Deaths": "2",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 8
     },
     {
       "Year": 1958,
@@ -88,7 +96,8 @@
       "Depth": 35,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 51
+      "Injuries": 51,
+      "id": 9
     },
     {
       "Year": 1959,
@@ -98,7 +107,8 @@
       "Depth": 55,
       "Notes": "A tsunami up to 2m (6ft 7in) high occurred in the Aleutian Islands.",
       "Deaths": "1",
-      "Injuries": 13
+      "Injuries": 13,
+      "id": 10
     },
     {
       "Year": 1960,
@@ -108,7 +118,8 @@
       "Depth": 25,
       "Notes": "This is the most powerful earthquake recorded since 1900. A tsunami up to 25m (82ft) high occurred.",
       "Deaths": "6000",
-      "Injuries": 11000
+      "Injuries": 11000,
+      "id": 11
     },
     {
       "Year": 1961,
@@ -118,7 +129,8 @@
       "Depth": 612.2,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 12
     },
     {
       "Year": 1962,
@@ -128,7 +140,8 @@
       "Depth": 390,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 13
     },
     {
       "Year": 1963,
@@ -138,7 +151,8 @@
       "Depth": 35,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 14
     },
     {
       "Year": 1964,
@@ -148,7 +162,8 @@
       "Depth": 25,
       "Notes": "Most of the deaths were caused by a tsunami which was the largest earthquake-produced tsunami ever recorded at a height of 67.0m (219.8ft). This is the second most powerful earthquake in modern times and the most powerful in North America.",
       "Deaths": "131",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 15
     },
     {
       "Year": 1965,
@@ -158,7 +173,8 @@
       "Depth": 30.3,
       "Notes": "A tsunami up to 10.7m (35ft) occurred but caused little damage. This is the second most powerful earthquake in Alaska and the United States as a whole.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 16
     },
     {
       "Year": 1966,
@@ -168,7 +184,8 @@
       "Depth": 38,
       "Notes": "A 3.4m (11ft) high tsunami occurred.",
       "Deaths": "125",
-      "Injuries": 3000
+      "Injuries": 3000,
+      "id": 16
     },
     {
       "Year": 1967,
@@ -178,7 +195,8 @@
       "Depth": 30,
       "Notes": "-",
       "Deaths": "86",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 17
     },
     {
       "Year": 1968,
@@ -188,7 +206,8 @@
       "Depth": 26,
       "Notes": "A majority of the casualties were from a 6m (20ft) high tsunami.",
       "Deaths": "52",
-      "Injuries": 330
+      "Injuries": 330,
+      "id": 18
     },
     {
       "Year": 1969,
@@ -198,7 +217,8 @@
       "Depth": 30,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 19
     },
     {
       "Year": 1970,
@@ -208,7 +228,8 @@
       "Depth": 644.8,
       "Notes": "This was one of the most powerful deep-focus earthquakes ever recorded.",
       "Deaths": "1",
-      "Injuries": 4
+      "Injuries": 4,
+      "id": 20
     },
     {
       "Year": 1971,
@@ -218,7 +239,8 @@
       "Depth": 37,
       "Notes": "An 8.0 event occurred 12 days earlier[17] so this can be considered a doublet earthquake.",
       "Deaths": "3",
-      "Injuries": 5
+      "Injuries": 5,
+      "id": 21
     },
     {
       "Year": 1972,
@@ -228,7 +250,8 @@
       "Depth": 60,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 22
     },
     {
       "Year": 1973,
@@ -238,7 +261,8 @@
       "Depth": 43.3,
       "Notes": "A 5.98m (19.6ft) high tsunami occurred.",
       "Deaths": "0",
-      "Injuries": 27
+      "Injuries": 27,
+      "id": 23
     },
     {
       "Year": 1974,
@@ -248,7 +272,8 @@
       "Depth": 13,
       "Notes": "-",
       "Deaths": "78",
-      "Injuries": 2400
+      "Injuries": 2400,
+      "id": 24
     },
     {
       "Year": 1975,
@@ -258,7 +283,8 @@
       "Depth": 49,
       "Notes": "A 2m (6ft 7in) high tsunami destroyed a few homes.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 25
     },
     {
       "Year": 1976,
@@ -268,7 +294,8 @@
       "Depth": 33,
       "Notes": "Further casualties were caused by a 9m (30ft) high tsunami.",
       "Deaths": "8000",
-      "Injuries": 10000
+      "Injuries": 10000,
+      "id": 26
     },
     {
       "Year": 1977,
@@ -278,7 +305,8 @@
       "Depth": 25,
       "Notes": "The earthquake was felt as far away as Albany in Australia. A 5.8m (19ft) high tsunami was also triggered.",
       "Deaths": "189",
-      "Injuries": 1100
+      "Injuries": 1100,
+      "id": 27
     },
     {
       "Year": 1978,
@@ -288,7 +316,8 @@
       "Depth": 44,
       "Notes": "6757 buildings destroyed or badly damaged. The earthquake also triggered a 60cm (2.0ft) high tsunami.",
       "Deaths": "28",
-      "Injuries": 1325
+      "Injuries": 1325,
+      "id": 28
     },
     {
       "Year": 1979,
@@ -298,7 +327,8 @@
       "Depth": 24,
       "Notes": "A tsunami up to 6m (20ft) high was triggered.[citation needed]",
       "Deaths": "600",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 29
     },
     {
       "Year": 1980,
@@ -308,7 +338,8 @@
       "Depth": 33,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 30
     },
     {
       "Year": 1981,
@@ -318,7 +349,8 @@
       "Depth": 25,
       "Notes": "One person drowned in a 1�m (3�ft 3�in) high tsunami.",
       "Deaths": "1[21]",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 31
     },
     {
       "Year": 1982,
@@ -328,7 +360,8 @@
       "Depth": 73,
       "Notes": "This event had similarities to the January 2001 El Salvador earthquake.",
       "Deaths": "43",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 32
     },
     {
       "Year": 1983,
@@ -338,7 +371,8 @@
       "Depth": 88.8,
       "Notes": "In areas close to the epicentre landslides occurred and trees were uprooted and a 25cm (0.82ft) high tsunami was observed off the coast.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 33
     },
     {
       "Year": 1984,
@@ -348,7 +382,8 @@
       "Depth": 18.1,
       "Notes": "Some landslides occurred",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 34
     },
     {
       "Year": 1985,
@@ -358,7 +393,8 @@
       "Depth": 27.9,
       "Notes": "At least 3536 buildings damaged or destroyed. A 3.0m (9.8ft)-high tsunami was observed on the Mexican coast although some estimates put the height at 30m (98ft)[25]",
       "Deaths": "10000",
-      "Injuries": 30000
+      "Injuries": 30000,
+      "id": 35
     },
     {
       "Year": 1986,
@@ -368,7 +404,8 @@
       "Depth": 19,
       "Notes": "Minor damage was reported in areas near the epicenter. A tsunami with heights of 10ft (3.0m) struck Hawaii more than 6400km (4000mi) away.[26]",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 36
     },
     {
       "Year": 1987,
@@ -378,7 +415,8 @@
       "Depth": 10,
       "Notes": "Minor damage was reported in areas near the epicentre and a small tsunami was observed.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 37
     },
     {
       "Year": 1988,
@@ -388,7 +426,8 @@
       "Depth": 17.8,
       "Notes": "Some damage was also reported in Myanmar.",
       "Deaths": "938",
-      "Injuries": 7700
+      "Injuries": 7700,
+      "id": 38
     },
     {
       "Year": 1989,
@@ -398,7 +437,8 @@
       "Depth": 10,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 39
     },
     {
       "Year": 1990,
@@ -408,7 +448,8 @@
       "Depth": 24.4,
       "Notes": "-",
       "Deaths": "1621",
-      "Injuries": 3000
+      "Injuries": 3000,
+      "id": 40
     },
     {
       "Year": 1991,
@@ -418,7 +459,8 @@
       "Depth": 10,
       "Notes": "A 4m (13ft)-high tsunami was observed.",
       "Deaths": "127",
-      "Injuries": 759
+      "Injuries": 759,
+      "id": 41
     },
     {
       "Year": 1992,
@@ -428,7 +470,8 @@
       "Depth": 23.5,
       "Notes": "A tsunami struck with heights of 25m (82ft).",
       "Deaths": "2500",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 42
     },
     {
       "Year": 1993,
@@ -438,7 +481,8 @@
       "Depth": 59.3,
       "Notes": "71 people were injured and a tsunami up to 2.1m (6ft 11in) was observed.",
       "Deaths": "0",
-      "Injuries": 71
+      "Injuries": 71,
+      "id": 43
     },
     {
       "Year": 1994,
@@ -448,7 +492,8 @@
       "Depth": 3,
       "Notes": "A 3.5m (11ft)-high tsunami was observed.",
       "Deaths": "12",
-      "Injuries": 1742
+      "Injuries": 1742,
+      "id": 44
     },
     {
       "Year": 1995,
@@ -458,7 +503,8 @@
       "Depth": 30.5,
       "Notes": "-",
       "Deaths": "3",
-      "Injuries": 59
+      "Injuries": 59,
+      "id": 45
     },
     {
       "Year": 1996,
@@ -468,7 +514,8 @@
       "Depth": 11.5,
       "Notes": "A 7m (23ft)-high tsunami occurred.",
       "Deaths": "166",
-      "Injuries": 423
+      "Injuries": 423,
+      "id": 46
     },
     {
       "Year": 1997,
@@ -478,7 +525,8 @@
       "Depth": 23.5,
       "Notes": "An 8.2m (27ft)-high tsunami was observed.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 47
     },
     {
       "Year": 1998,
@@ -488,7 +536,8 @@
       "Depth": 10,
       "Notes": "Believed to be the largest instrumentally recorded earthquake in this area to date.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 48
     },
     {
       "Year": 1999,
@@ -498,7 +547,8 @@
       "Depth": 15.5,
       "Notes": "At least 105479 buildings damaged or destroyed.",
       "Deaths": "2444",
-      "Injuries": 11305
+      "Injuries": 11305,
+      "id": 49
     },
     {
       "Year": 2000,
@@ -508,7 +558,8 @@
       "Depth": 13,
       "Notes": "One person killed in a landslide another from a heart attack. Two 7.8 Mw aftershocks occurred the following day.",
       "Deaths": "2",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 50
     },
     {
       "Year": 2001,
@@ -518,7 +569,8 @@
       "Depth": 33,
       "Notes": "At least 90 drowned in a 7m (23ft)-high tsunami.",
       "Deaths": "145",
-      "Injuries": 2713
+      "Injuries": 2713,
+      "id": 51
     },
     {
       "Year": 2002,
@@ -528,7 +580,8 @@
       "Depth": 4.2,
       "Notes": "It is the largest earthquake in Alaska in 16 years.",
       "Deaths": "0",
-      "Injuries": 1
+      "Injuries": 1,
+      "id": 52
     },
     {
       "Year": 2003,
@@ -538,7 +591,8 @@
       "Depth": 23.5,
       "Notes": "Two missing. A 4m (13ft)-high tsunami observed.",
       "Deaths": "0",
-      "Injuries": 849
+      "Injuries": 849,
+      "id": 53
     },
     {
       "Year": 2004,
@@ -548,7 +602,8 @@
       "Depth": 10,
       "Notes": "Majority of the deaths were from the associated tsunami that devastated parts of Southeast Asia and Eastern Africa with heights up to 51m (167ft) in Banda Aceh.",
       "Deaths": "227898",
-      "Injuries": 125000
+      "Injuries": 125000,
+      "id": 54
     },
     {
       "Year": 2005,
@@ -558,7 +613,8 @@
       "Depth": 21,
       "Notes": "Ten fatalities in Sri Lanka due to evacuations. A 3m (9.8ft)-high tsunami damaged an airport.",
       "Deaths": "1313",
-      "Injuries": 300
+      "Injuries": 300,
+      "id": 55
     },
     {
       "Year": 2006,
@@ -568,7 +624,8 @@
       "Depth": 10,
       "Notes": "1 person injured when a tsunami struck with heights of 15m (49ft).",
       "Deaths": "0",
-      "Injuries": 1
+      "Injuries": 1,
+      "id": 56
     },
     {
       "Year": 2007,
@@ -578,7 +635,8 @@
       "Depth": 34,
       "Notes": "A 3m (9.8ft) tsunami observed.",
       "Deaths": "23",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 57
     },
     {
       "Year": 2008,
@@ -588,7 +646,8 @@
       "Depth": 19,
       "Notes": "-",
       "Deaths": "87587",
-      "Injuries": 374177
+      "Injuries": 374177,
+      "id": 58
     },
     {
       "Year": 2009,
@@ -598,7 +657,8 @@
       "Depth": 18,
       "Notes": "A tsunami up to 14m (46ft) struck the Samoan coast.",
       "Deaths": "189",
-      "Injuries": 7
+      "Injuries": 7,
+      "id": 59
     },
     {
       "Year": 2010,
@@ -608,7 +668,8 @@
       "Depth": 22.9,
       "Notes": "A 10m (33ft) tsunami struck the Chilean coast.",
       "Deaths": "550",
-      "Injuries": 12000
+      "Injuries": 12000,
+      "id": 60
     },
     {
       "Year": 2011,
@@ -618,7 +679,8 @@
       "Depth": 29,
       "Notes": "A tsunami up to 40.5m (133ft) struck the Tohoku coast.",
       "Deaths": "19747",
-      "Injuries": 6000
+      "Injuries": 6000,
+      "id": 61
     },
     {
       "Year": 2012,
@@ -628,7 +690,8 @@
       "Depth": 20,
       "Notes": "An 8.2 Mw aftershock occurred a few hours later.",
       "Deaths": "10",
-      "Injuries": 12
+      "Injuries": 12,
+      "id": 62
     },
     {
       "Year": 2013,
@@ -638,7 +701,8 @@
       "Depth": 598.1,
       "Notes": "The quake was felt as far away as Moscow.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 63
     },
     {
       "Year": 2014,
@@ -648,7 +712,8 @@
       "Depth": 25,
       "Notes": "-",
       "Deaths": "6",
-      "Injuries": 9
+      "Injuries": 9,
+      "id": 64
     },
     {
       "Year": 2015,
@@ -658,7 +723,8 @@
       "Depth": 22.4,
       "Notes": "-",
       "Deaths": "21",
-      "Injuries": 34
+      "Injuries": 34,
+      "id": 65
     },
     {
       "Year": 2016,
@@ -668,7 +734,8 @@
       "Depth": 94.5,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 66
     },
     {
       "Year": 2017,
@@ -678,7 +745,8 @@
       "Depth": 47.4,
       "Notes": "-",
       "Deaths": "98",
-      "Injuries": 250
+      "Injuries": 250,
+      "id": 67
     },
     {
       "Year": 2018,
@@ -688,7 +756,8 @@
       "Depth": 600,
       "Notes": "-",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 68
     },
     {
       "Year": 2019,
@@ -698,7 +767,8 @@
       "Depth": 122.6,
       "Notes": "-",
       "Deaths": "2",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 69
     },
     {
       "Year": 2020,
@@ -708,7 +778,8 @@
       "Depth": 28,
       "Notes": "Foreshock to the 8.2 in 2021 along with an event in October.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 70
     },
     {
       "Year": 2021,
@@ -718,7 +789,8 @@
       "Depth": 32.2,
       "Notes": "This is the largest earthquake in the United States since the 1965 Rat Islands earthquake.",
       "Deaths": "0",
-      "Injuries": 0
+      "Injuries": 0,
+      "id": 71
     },
     {
       "Year": 2022,
@@ -728,7 +800,8 @@
       "Depth": 41,
       "Notes": "-",
       "Deaths": "4",
-      "Injuries": 225
+      "Injuries": 225,
+      "id": 72
     }
   ]
 }

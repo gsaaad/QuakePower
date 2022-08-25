@@ -1,7 +1,6 @@
 // JQUERY SELECTORS
 
 const earthquakeForm = $("#userEarthquake-form");
-
 const idInput = $("#id-input");
 const depthInput = $("#depth-input");
 const magnitudeInput = $("#magnitude-input");
