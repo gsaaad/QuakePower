@@ -8,4 +8,5 @@ earthquakes.txt
 index.html
 sample.html
 earthquakes.js
+readData.js
 .env
