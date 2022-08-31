@@ -4,6 +4,10 @@
 
 Have you ever wondered how many dangerous Earthquakes there are? (Here's a hint: there's over 60 most dangerous recorded earthquakes since 1950!) Here's a node application that allows users to enter their own earthquake data for a seperate database. They can also access the most dangerous and largest earthquakes as well as thousands of records of every earthquake with a magnitude of 6+ from 2004 to 2022.
 
+## Preview
+
+- ![Preview](./public/img/QuakePower_Preview.png)
+
 ## Table of Contents
 
 - [Usage](#usage)
