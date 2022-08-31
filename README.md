@@ -19,11 +19,11 @@ Have you ever wondered how many dangerous Earthquakes there are? (Here's a hint:
 
 ## Usage
 
-access to earthquake information from 2004-2022 with a magnitude of 6+, which is a moderate level of danger and damage
+Access to earthquake information from 2004-2022 with a magnitude of 6+, which is a moderate level of danger and damage. Users can enter their own earthquake data if they feel like it. Access to Largest Earthquake Data and most dangerous earthquake data (based from WIKI).
 
 ## Installation
 
-install dependencies, start application and go to localhost PORT
+Install dependencies, start application and go to localhost PORT
 
 ## License
 
@@ -35,7 +35,7 @@ gsaaad
 
 ## Tests
 
-jest
+Jest
 
 ## Questions
 
